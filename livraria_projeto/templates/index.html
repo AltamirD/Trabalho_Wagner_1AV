@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+   <div class="row">
+      {% for post in posts %}
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.titulo }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ post.subtitulo }}</h6>
+            <p class="card-text">{{ post.descricao }}</p>
+            <a href="{% url 'post_detail' post.id %}" class="card-link">Ver</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endblock %}
+  

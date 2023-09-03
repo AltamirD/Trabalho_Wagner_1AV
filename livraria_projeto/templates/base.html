@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltamirBlog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark px-5">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Books for <br> Programmers</span>
+            <form class="d-flex">
+                <input class="form-control me-2 text-lg-center" type="search" placeholder="Autor ou livro      |      O que você está procurando?    🔍" aria-label="Search" style="width: 500px; height: 40px;">
+            </form>
+            <div>
+                <span class="me-3 text-white">👤 Usuário</span>
+                <span class="text-white">🛒</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="mb-3">
+            <h5>Ver ofertas para minha região</h5>
+        </div>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Página principal</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#bestsellers">mais vendidos</a></li>
+            </ol>
+        </nav>
+
+        <h6>Categorias</h6>
+        <div class="d-flex justify-content-center align-items-center mb-4 text-center">
+          <span class="me-3">Último mês</span>
+          <span class="me-3">Semana</span>
+          <span class="me-3">Hoje</span>
+        </div>
+        <hr class="w-100 mb-3">  <!-- Adicionado hr com largura total e margem inferior -->
+      
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://m.media-amazon.com/images/I/51uKR6J3cBL._SX345_BO1,204,203,200_.jpg" class="card-img-top" alt="Nome do Produto">
+              <button class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-1 p-2 text-bg-red" style="width: 40px; height: 40px;">➕</button>
+              <div class="card-body">
+                <h5 class="card-title">Algorítmo e lógica de programação</h5>
+                <p class="card-text">R$44,89</p>
+                <a href="{% url 'categorias' %}" class="btn btn-success">Confirmar Compra</a>
+              </div>
+            </div>
+          </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://m.media-amazon.com/images/I/51uKR6J3cBL._SX345_BO1,204,203,200_.jpg" class="card-img-top" alt="Nome do Produto">
+                <button class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-1 p-2 text-bg-red" style="width: 40px; height: 40px;">➕</button>
+                <div class="card-body">
+                  <h5 class="card-title">Algorítmo e lógica de programação</h5>
+                  <p class="card-text">R$44,89</p>
+                  <a href="{% url 'categorias' %}" class="btn btn-success">Confirmar Compra</a>
+                </div>
+              </div>
+            </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://m.media-amazon.com/images/I/51uKR6J3cBL._SX345_BO1,204,203,200_.jpg" class="card-img-top" alt="Nome do Produto">
+              <button class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-1 p-2 text-bg-red" style="width: 40px; height: 40px;">➕</button>
+              <div class="card-body">
+                <h5 class="card-title">Algorítmo e lógica de programação</h5>
+                <p class="card-text">R$44,89</p>
+                <a href="{% url 'categorias' %}" class="btn btn-success">Confirmar Compra</a>
+              </div>
+              </div>
+            </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://m.media-amazon.com/images/I/51uKR6J3cBL._SX345_BO1,204,203,200_.jpg" class="card-img-top" alt="Nome do Produto">
+              <button class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-1 p-2 text-bg-red" style="width: 40px; height: 40px;">➕</button>
+              <div class="card-body">
+                <h5 class="card-title">Algorítmo e lógica de programação</h5>
+                <p class="card-text">R$44,89</p>
+                <a href="{% url 'categorias' %}" class="btn btn-success">Confirmar Compra</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/51uKR6J3cBL._SX345_BO1,204,203,200_.jpg" class="card-img-top" alt="Nome do Produto">
+            <button class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-1 p-2 text-bg-red" style="width: 40px; height: 40px;">➕</button>
+            <div class="card-body">
+              <h5 class="card-title">Algorítmo e lógica de programação</h5>
+              <p class="card-text">R$44,89</p>
+              <a href="{% url 'categorias' %}" class="btn btn-success">Confirmar Compra</a>
+            </div>
+          </div>
+        </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://m.media-amazon.com/images/I/51uKR6J3cBL._SX345_BO1,204,203,200_.jpg" class="card-img-top" alt="Nome do Produto">
+          <button class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-1 p-2 text-bg-red" style="width: 40px; height: 40px;">➕</button>
+          <div class="card-body">
+            <h5 class="card-title">Algorítmo e lógica de programação</h5>
+            <p class="card-text">R$44,89</p>
+            <a href="{% url 'categorias' %}" class="btn btn-success">Confirmar Compra</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+        <img src="https://m.media-amazon.com/images/I/51uKR6J3cBL._SX345_BO1,204,203,200_.jpg" class="card-img-top" alt="Nome do Produto">
+        <button class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-1 p-2 text-bg-red" style="width: 40px; height: 40px;">➕</button>
+        <div class="card-body">
+          <h5 class="card-title">Algorítmo e lógica de programação</h5>
+          <p class="card-text">R$44,89</p>
+          <a href="{% url 'categorias' %}" class="btn btn-success">Confirmar Compra</a>
+        </div>
+      </div>
+    </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://m.media-amazon.com/images/I/51uKR6J3cBL._SX345_BO1,204,203,200_.jpg" class="card-img-top" alt="Nome do Produto">
+          <button class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-1 p-2 text-bg-red" style="width: 40px; height: 40px;">➕</button>
+            <div class="card-body">
+              <h5 class="card-title">Algorítmo e lógica de programação</h5>
+              <p class="card-text">R$44,89</p>
+              <a href="{% url 'categorias' %}" class="btn btn-success">Confirmar Compra</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
